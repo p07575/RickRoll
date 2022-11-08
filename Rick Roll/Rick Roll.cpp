@@ -25,7 +25,7 @@ int currentDateTime() {
     tstruct = *localtime(&now);
     // Visit http://en.cppreference.com/w/cpp/chrono/c/strftime
     // for more information about date/time format
-    strftime(buf, sizeof(buf), "%H", &tstruct);
+    strftime(buf, sizeof(buf), "%I", &tstruct);
     strftime(cuf, sizeof(cuf), "%M", &tstruct);
     for (int i = 0; i < strlen(buf); i++)
     {
